@@ -1,0 +1,44 @@
+
+:root {
+    --colorFondo: #FFFEE9;
+    --colorFondoDos:  #fffef5;
+    --colorClaro: #E9B093;
+    --colorOscuro: #E78E6C;
+    --colorGris: #64707E;
+    --colorNegro: #272B2E;
+}
+
+.cita{
+    background-color: var(--colorOscuro);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteiner-cita{
+    width: 70%;
+    height: 100%;
+    /* background-color: yellow; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-cita{
+    color: var(--colorFondoDos);
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.name-cita{
+    color: var(--colorFondoDos);
+    font-size: var(--colorFondoDos);
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+
+}

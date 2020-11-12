@@ -1,0 +1,61 @@
+:root{
+    --colorFondo:#FFFEE9;
+    --colorClaro:#E9B093;
+    --colorOscuro:#E78E6C;
+    --colorGris:#64707E;
+    --colorNegro:#272B2E;
+}
+
+footer{
+    background-color: var(--colorOscuro);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.conteiner-footer{
+    margin: auto;
+    width: 35%;
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.footer-section,.footer-redes{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+
+.footer-section{
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.footer-list:visited{
+    text-decoration: var(--colorFondo);
+    color: var(--colorFondo);
+}
+.footer-section:visited{
+    color: var(--colorFondo);
+}
+
+.footer-redes{
+    width: 60%;
+    justify-content: space-between;
+}
+
+.footer-pie{
+    color: var(--colorFondo);
+}
+
+
+
