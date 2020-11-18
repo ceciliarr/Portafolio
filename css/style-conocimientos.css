@@ -35,7 +35,7 @@
      margin: 5%;
  }
 
- .lenguajes{
+ .list-language{
      display: flex;
      flex-flow: row wrap;
      width: 60vw;
@@ -69,11 +69,24 @@
  }
 
  .language:hover{
-     border: 1px solid var(--colorOscuro);
+     border: 2px solid var(--colorOscuro);
      border-radius: 10px;
      color: var(--colorOscuro);
- 
+     box-shadow: inset 0px 4px 18px -8px rgba(0,0,0,0.75);
+      
  }
+
+ .language:hover .colored{
+     transform: scale(1.1);
+    
+ }
+
+ .language:hover{
+     font-size: 1.2em;
+ }
+
+
+ 
 
 
 

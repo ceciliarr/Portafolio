@@ -18,13 +18,11 @@
 }
 
 main{
-    /* width: auto; */
+    
     margin: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--colorFondo2); */
-    /* background-color: blue; */
     overflow: hidden;
 
 }
@@ -65,17 +63,30 @@ a:visited{
 
 /* BOTON CONTACTO */
 
-.contact{
+.menu :nth-child(4){
+	color: white;
+    background-color: var(--colorNegro);
+    padding: 10px 20px;
+    border-radius: 50px;
+    
+}
+
+
+/* .contact{
     color: white;
     background-color: var(--colorNegro);
     padding: 10px 20px;
     border-radius: 50px;
-}
+} */
+
 .contact:visited{
     color: white;
 }
 .contact:hover {
     background-color:var(--colorGris);
+    padding: 10px 20px;
+    border-radius: 50px;
+    
 }
 
  /* MENU HAMBURGUESA */

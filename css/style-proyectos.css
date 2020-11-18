@@ -33,8 +33,7 @@
  .project-p{
      width: 30vw;
      text-align: center;
-     /* background-color: chocolate; */
-     
+         
  }
 
  .trabajos{
@@ -47,7 +46,6 @@
      align-content: center;
      list-style: none;
      box-sizing: border-box;
-     
      
  }
 
@@ -105,8 +103,9 @@
     border: 1px solid var(--colorOscuro);
     border-radius: 10px;
     color: var(--colorOscuro);
-
+    box-shadow: inset 0px 4px 18px -8px rgba(0,0,0,0.75);
 }
+
 
 /* RESPONSIVE */
 
