@@ -1,11 +1,10 @@
-
-:root {
-    --colorFondo: #FFFEE9;
-    --colorFondoDos:  #fffef5;
-    --colorClaro: #E9B093;
-    --colorOscuro: #E78E6C;
-    --colorGris: #64707E;
-    --colorNegro: #272B2E;
+:root{
+    --colorFondo:#FFFEE9;
+    --colorFondoDos: #fffef5;
+    --colorClaro: #f8efd4;
+    --colorOscuro: #edc988;
+    --colorGris: #de4463;
+    --colorNegro: #821752;
 }
 
 
@@ -26,8 +25,7 @@
      font-size: 3em;
      font-weight: 1000;
      font-family: 'Open Sans', sans-serif;
-
- }
+}
 
  .conocimientos-p{
      width: 100vw;
@@ -44,9 +42,7 @@
      align-content: flex-end;
      list-style: none;
      box-sizing: border-box;
-     /* background-color: yellow; */
-     
- }
+}
 
  .language{
      width: 250px;
@@ -65,31 +61,28 @@
 }
  .colored{
     font-size: 80px; 
-  
- }
+}
+
+
+ /* TRANSFORMACION */
 
  .language:hover{
-     border: 2px solid var(--colorOscuro);
+     border: 2px solid var(--colorGris);
      border-radius: 10px;
-     color: var(--colorOscuro);
-     box-shadow: inset 0px 4px 18px -8px rgba(0,0,0,0.75);
-      
- }
+     color: var(--colorGris);
+     box-shadow: 0px 4px 18px -8px var(--colorNegro);
+}
 
  .language:hover .colored{
      transform: scale(1.1);
-    
- }
+}
 
  .language:hover{
      font-size: 1.2em;
- }
+}
 
 
- 
-
-
-
+/* RESPONSIVE */
 
 
 @media(max-width:900px){

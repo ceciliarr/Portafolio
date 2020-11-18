@@ -1,13 +1,14 @@
 :root{
     --colorFondo:#FFFEE9;
-    --colorClaro:#E9B093;
-    --colorOscuro:#E78E6C;
-    --colorGris:#64707E;
-    --colorNegro:#272B2E;
+    --colorFondoDos:#fffef5;
+    --colorClaro:#f8efd4;
+    --colorOscuro:#edc988;
+    --colorGris:#de4463;
+    --colorNegro:#821752;
 }
 
 footer{
-    background-color: var(--colorOscuro);
+    background-color: var(--colorNegro);
     width: 100vw;
     height: 40vh;
     display: flex;
@@ -15,7 +16,7 @@ footer{
     
 }
 
-.conteiner-footer{
+.container-footer{
     margin: auto;
     width: 80vh;
     height: 60%;
@@ -23,25 +24,17 @@ footer{
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
-   /*  background-color: burlywood; */
-    
-
 }
 
 .footer-section,.footer-redes{
     display: flex;
     flex-direction: row;
     list-style: none;
-    /* background-color: chartreuse; */
-    
-    
 }
 
 .footer-section{
     width: 100%;
     justify-content: space-between;
-    /* background-color: brown; */
-    
 }
 
 .footer-list:visited{
@@ -52,12 +45,11 @@ footer{
 .footer-redes{
     width: 70%;
     justify-content: space-evenly;
-    /* background-color: yellow; */
 }
 
 
 .icon-footer{
-    background-color: var(--colorFondo);
+    background-color: var(--colorFondo2);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -66,8 +58,7 @@ footer{
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    color: var(--colorOscuro);
-
+    color: var(--colorClaro);
 }
 
 .unico{
@@ -84,14 +75,17 @@ footer{
 .icon-footer:hover{
     background-color: var(--colorOscuro);
     border: 1px solid var(--colorFondo);
-    color: var(--colorFondo);
-    transition-duration: 1s;
+    color: var(--colorNegro);
+    transition-duration: 1.5s;
+}
 
+.footer-list:hover {
+    font-weight: 700;
 }
 
 
 @media(max-width:640px){
-    .conteiner-footer{
+    .container-footer{
         width: 90%;
     }
 }
@@ -100,9 +94,8 @@ footer{
     .footer-section{
         display: none;
     }
-    .conteiner-footer{
+    .container-footer{
        height: 15vh;
-       
     }
 
     footer{

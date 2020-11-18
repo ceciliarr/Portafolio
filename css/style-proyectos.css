@@ -1,13 +1,12 @@
 
-:root {
-    --colorFondo: #FFFEE9;
+:root{
+    --colorFondo:#FFFEE9;
     --colorFondoDos:  #fffef5;
-    --colorClaro: #E9B093;
-    --colorOscuro: #E78E6C;
-    --colorGris: #64707E;
-    --colorNegro: #272B2E;
+    --colorClaro:#f8efd4;
+    --colorOscuro:#edc988;
+    --colorGris:#de4463;
+    --colorNegro:#821752;
 }
-
 
  .project{
      width: 100vw;
@@ -21,22 +20,20 @@
      align-items: center;
  }
 
- .title-proyectos{
+ .title-project{
      margin-top: 40%;
      margin-bottom: 10%;
      font-size: 3em;
      font-weight: 1000;
      font-family: 'Open Sans', sans-serif;
-
  }
 
  .project-p{
      width: 30vw;
      text-align: center;
-         
  }
 
- .trabajos{
+ .project-list{
      display: flex;
      flex-flow: row wrap;
      width: 80vw;
@@ -46,7 +43,6 @@
      align-content: center;
      list-style: none;
      box-sizing: border-box;
-     
  }
 
  
@@ -66,8 +62,9 @@
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: center;
-
 }
+
+
 /* IMAGENES */
 
 .first{
@@ -99,11 +96,14 @@
     background-image: url(../img/seventh.svg);
 }
 
+
+/* TRANSFORMACIONES */
+
 .works:hover{
-    border: 1px solid var(--colorOscuro);
+    border: 2px solid var(--colorGris);
     border-radius: 10px;
-    color: var(--colorOscuro);
-    box-shadow: inset 0px 4px 18px -8px rgba(0,0,0,0.75);
+    color: var(--colorGris);
+    box-shadow: 0px 4px 18px -8px var(--colorNegro);
 }
 
 
@@ -117,7 +117,7 @@
 }
 
 @media(max-width:1160px){
-    .trabajos{
+    .project-list{
         width: 80vw;
         justify-content: center;
     }
@@ -126,20 +126,14 @@
 
 
 @media(max-width:370px){
-  
-    .title-proyectos{
+    .title-project{
         font-size: 1.5em;
     }
 }
 
 @media(max-width:900px){
-    
     .project-p{
         width: 270px;
     }
-
-    /* .title-proyectos{
-        font-size: 2em;
-    } */
 }
 
