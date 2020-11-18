@@ -11,26 +11,25 @@
 .usuario{
     background-color: var(--colorFondoDos);
     width: 100vw;
-    height: 140vh;
+    height: auto;
    
 }
 
-.conteiner{
+.container{
     background-color: var(--colorFondo);
     width: 80vw;
-    height: 110vh;
-    margin: 10%;
-    border: 0.5px solid var(--colorGris);
+    height: auto;
+    margin: 15% auto;
+    border: 0.5px solid wheat;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 5%;
+    padding: 3%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .contacto{
-    /* background-color: rgb(50, 122, 205); */
     display: flex;
     flex-flow: column wrap;
     width: 40%;
@@ -38,36 +37,68 @@
     margin: 1%;
     justify-content: space-between;
 }
+.contacto-title{
+    margin-top: 10%;
+}
 
 .links{
    /*  background-color: yellow; */
     display: flex;
     flex-flow: column wrap;
-    height: 40%;
+    height: 30vh;
     justify-content: space-between;
     list-style: none;
     margin: 5%;
+    margin-top: 10%;
 }
 
 .icon{
     color: var(--colorGris);
     font-size: 20px;
-    
+    /* border: 1px solid black;
+    background-color: rgb(235, 145, 27); */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.icons{
-    width: 5%;
-    height: 5%;
-    border: 1px solid black;
-    background-color: blue;
+.fa-envelope{
+    /* background-color: crimson; */
+    padding: 0;
+    margin: 0;
+   
 }
 
-.icons:hover{
+
+.redsocial{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: auto;
+    /* margin-top: 5%; */
+    /* background-color: cadetblue; */
+}
+
+
+
+.red{
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.icon:hover .red{
     background-color: var(--colorOscuro);
     color: var(--colorFondoDos);
     border-radius: 50%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 /* FORMULARIO */
@@ -77,17 +108,22 @@ form{
     display: flex;
     flex-flow: column wrap;
     width: 50%;
-    margin: 1%;
     justify-content: space-between;
     font-weight: 800;
     
 }
-.formulario{
+.container-form{
     /* background-color: rgb(55, 205, 50); */
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.form-title{
+    margin-top: 10%;
+    /* background-color: yellow; */
 }
 
 input{
@@ -141,6 +177,8 @@ textarea{
     padding: 3%;
 }
 
+ /* BUTTON  */
+
 .submit{
     color: white;
     background-color: var(--colorNegro);
@@ -156,6 +194,8 @@ textarea{
     background-color: var(--colorGris);
 }
 
+/* FOCUS */
+
 textarea:focus{
     border:1px solid var(--colorOscuro);
     outline: none;
@@ -163,4 +203,124 @@ textarea:focus{
 input:focus{
     border:1px solid var(--colorOscuro);
     outline: none;
+}
+
+
+/* TRANSFORMACION */
+
+.icon:hover{
+    background-color: var(--colorOscuro);
+    color: var(--colorFondo);
+}
+.redsocial:hover{
+    color: var(--colorFondo);
+}
+
+/* RESPONSIVE */
+
+/* CONTACTO */
+
+@media(max-width:900px){
+    .container{
+        flex-direction: column;
+        /* background-color: cyan; */
+        border: none;
+        background-color: var(--colorFondo2);
+        margin: 1%;
+        width: 100%;
+
+          
+    }
+    .contacto{
+        background-color: darkgoldenrod;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        justify-content: space-between;
+        
+    }
+    h2{
+        font-size: 3em;
+        /* background-color: darkgreen; */
+    }
+
+    .contacto-p{
+        width: 60%;
+        /* background-color: yellow; */
+    }
+    
+    .links{
+        flex-flow: row wrap;
+        background-color: violet;
+        height: 20vh;
+        margin-top: 5%;
+        width: 60vw;
+    }
+
+    .redsocial{
+        /* background-color: white; */
+        width: 30vw;
+        /* flex-wrap: wrap; */
+    }
+
+    .fa-envelope{
+        padding-left: 3%;
+    }
+}
+
+
+@media(max-width:650px){
+    .links{
+        flex-direction: column;
+        height: 30vh;
+    }
+
+    .container{
+        /* margin: 1%;
+        width: 100%; */
+    }
+
+    .contacto-p{
+        width: 100%;
+    }
+}
+
+@media(max-width:370px){
+  
+    .contacto-title{
+        font-size: 1.5em;
+    }
+}
+
+
+/* FORMULARIO */
+
+@media(max-width:900px){
+    form{
+        width: 100%;
+    }
+
+    .form-title{
+        margin-bottom: 5%;
+    }
+}
+
+
+@media(max-width:650px){
+    .nameandlastname{
+        flex-direction: column;
+    }
+    .name{
+        width: 100%;
+    }
+    .lastname{
+        width: 100%;
+    }
+}
+
+@media(max-width:370px){
+  
+    .form-title{
+        font-size: 1.5em;
+    }
 }

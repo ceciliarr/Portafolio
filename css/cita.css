@@ -16,7 +16,7 @@
 }
 
 .conteiner-cita{
-    width: 70%;
+    width: 70vw;
     height: 100%;
     /* background-color: yellow; */
     margin: auto;
@@ -26,9 +26,14 @@
     align-items: center;
 }
 
+.fa-quote-right{
+    color: var(--colorFondoDos);
+    font-size: 5em;
+}
+
 .text-cita{
     color: var(--colorFondoDos);
-    font-size: 45px;
+    font-size: 2.8em;
     text-align: center;
     font-weight: 700;
     font-style: italic;
@@ -38,7 +43,24 @@
     color: var(--colorFondoDos);
     font-size: var(--colorFondoDos);
     font-weight: 900;
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
 
+}
+
+@media(max-width:700px){
+    .fa-quote-right{
+        font-size: 3em;
+    }
+    
+    .text-cita{
+        font-size: 2em;
+       
+    }
+    
+    .name-cita{
+        font-size: 1em;
+        text-align: center;
+    
+    }
 }

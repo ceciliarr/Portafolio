@@ -1,10 +1,12 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: var(--colorNegro);
+    width: auto;
+    
 }
 
 :root{
@@ -16,16 +18,20 @@
 }
 
 main{
-    width: 100%;
-    margin: 0%;
+    /* width: auto; */
+    margin: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    /* background-color: var(--colorFondo2); */
+    /* background-color: blue; */
+    overflow: hidden;
 
 }
 
 nav{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 13vh;
     background-color: var(--colorClaro) ;
     display: flex;
@@ -71,3 +77,55 @@ a:visited{
 .contact:hover {
     background-color:var(--colorGris);
 }
+
+ /* MENU HAMBURGUESA */
+
+.menu-fas{
+    /* height: 5%; */
+    width: 100%; 
+}
+.fas{
+    /* height: 5%;
+    width: 70%; */
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 1%;
+    color: var(--colorClaro);
+    /* background-color: yellow; */
+}
+
+
+/* RESPONSIVO */
+
+@media(max-width:1070px){
+    .menu{
+        display: none;
+    }
+    nav{
+        background-color: var(--colorFondo);
+        height: 5%;
+    }
+      
+}
+@media (min-width:1070px){
+    .menu-fas{
+        display: none;
+    }
+    
+}
+
+@media (max-width:570px){
+    /* nav{
+        width: 100vw;
+        justify-content: flex-start;
+    } */
+
+    .menu-fas{
+        /* height: 100%; */
+        /* width: 50%;  */
+    }
+}
+
+

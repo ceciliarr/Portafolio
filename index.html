@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,9 @@
 
     <!-- ICONOS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
+    <script src="https://kit.fontawesome.com/b213fdae7b.js" crossorigin="anonymous"></script>
+
     
 
     <!-- CSS -->
@@ -21,7 +24,7 @@
     <link rel="stylesheet" href="./css/style-contacto.css">
     <link rel="stylesheet" href="./css/style-footer.css">
 
-    <title>Cecilia Romero Roldan</title>
+    <title>Portafolio Cecilia</title>
 </head>
 <body>
     <main>
@@ -30,16 +33,20 @@
                 <li><a href="#hola" class="nav">HOLA</a></li>
                 <li><a href="#conocimientos" class="nav">CONOCIMIENTOS</a></li>
                 <li><a href="#proyectos" class="nav">PROYECTOS</a></li>
-                <li class="white"><a href="#contacto" class="contact">CONTACTO</a></li>
+                <li class="white"><a href="#container" class="contact">CONTACTO</a></li>
             </ul>
+            <div class="menu-fas">
+                <i class="fas fa-chevron-circle-down"></i>
+            </div>
         </nav>
 
         <!-- HOLA -->
         <header>
             <div class="presentacion"> 
                 <a name="hola"><h1>¡Hola! Soy <span>Cecilia <br> Romero Roldán</span></h1></a>
-                <p>Desarrolladora Frontend y Gerente gastronomica</p>
-                <button class="information">LO QUE HAGO</button>
+                <p class="descripcion">Gerente gastronomica y futura desarrolladora</p>
+                <a href="#proyectos" class="buttom-info">LO QUE HAGO</a>
+                <!-- <button class="information">LO QUE HAGO</button> -->
             </div>
             <div class="img">
                 <!-- <img src="./img/undraw_Imagination_re_i0xi.svg" alt="imagination"> -->
@@ -48,9 +55,9 @@
 
         <article>
             <!-- CONOCIMIENTOS -->
-            <section class="knowing"> 
-                <a name="conocimientos"><h2>Mis Conocimientos</h2></a>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae eaque neque molestias consequuntur vel ab quas architecto.</p>
+            <section class="container-conocimientos"> 
+                <a name="conocimientos"><h2 class="conocimientos-title">Mis Conocimientos</h2></a>
+                <p class="conocimientos-p">"Lo maravilloso de aprender algo, es que nadie puede arrebatárnoslo"</p>
                 <ul class="lenguajes">
                     <li class="language html">HTML 5 <i class="devicon-html5-plain colored"></i></li>
                     <li class="language html">CSS 3 <i class="devicon-css3-plain colored"></i>
@@ -69,7 +76,7 @@
             <!-- CITA -->
             <section class="cita">
                 <div class="conteiner-cita">
-                <img src="" alt="comillas">
+                <i class="fas fa-quote-right"></i>
                 <p class="text-cita">¿Por qué se ha de temer a los cambios? Toda la vida es un cambio. ¿Por qué hemos de temerle?</p>
                 <p class="name-cita">George Herbert</p>
                 </div>
@@ -77,8 +84,9 @@
 
             <!-- PROYECTOS -->
             <section class="project">
-                <a name="proyectos"><h2>Mis proyectos</h2></a>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quo nobis voluptatum tenetur! Id, nesciunt?</p>
+                <a name="proyectos"><h2 class="title-proyectos">Mis proyectos</h2></a>
+                <p class="project-p">A continuacion voy a ir subiendo los distintos trabajos que vaya realizando en la cursada de Frontend.</p>
+                <p class="project-p">¡Espero que les guste!</p>
                 <ul class="trabajos">
                     <li class="works first"><img src="" alt="">Portfolio</li>
                     <li class="works second">Generador de memes</li>
@@ -95,39 +103,45 @@
         <!-- CONTACTO Y FORMULARIO -->
 
         <article class="usuario">
-            <section class="conteiner">
+            <section class="container" id="container">
             <div class="contacto">
-                <a name="contacto"><h2>Contactame</h2></a>
-                <p>Si  tenés dudas, querés saber más de mi, dejarme un comentario o simplemente contactarme podes hacerlo en los siguiente medios:</p>
+                <h2 class="contacto-title">Contactame</h2>
+                <p class="contacto-p">Si  tenés dudas, querés saber más de mi, dejarme un comentario o simplemente contactarme podes hacerlo en los siguiente medios:</p>
 
                 <ul class="links">
-                    <li class="redsocial">
-                        <a href="https://twitter.com/?lang=es">
-                        <i class="devicon-twitter-plain icon"></i>@AdaLovelace
+                    <li> 
+                        <a href="https://www.instagram.com/ceci_ror/?hl=es" class="redsocial">
+                        
+                        <i class="fab fa-instagram-square icon"></i>
+                        <div class="red">@ceci_ror</div>
                         </a>
                     </li>
                     
-                    <li class="redsocial">
-                        <a href="https://twitter.com/?lang=es">
-                        <i class="devicon-github-plain icon"></i> AdaLovelace
+                    <li>
+                        <a href="https://github.com/ceciliarr"  class="redsocial">
+                        <i class="fab fa-github-alt icon"></i> <div class="red">ceciliarr</div>
                         </a>
                     </li>
                     
-                    <li class="redsocial">
-                        <a href="https://twitter.com/?lang=es">
-                        <i class="devicon-linkedin-plain icon"></i> 
-                        adalovelace
+                    <li>
+                        <a href="https://www.linkedin.com/in/cecilia-romero-roldan-7057701bb/"  class="redsocial">
+                        <i class="fab fa-linkedin icon"></i> 
+                        <div class="red">@ceci_ror</div>
                     </a></li>
                     
-                    <li class="redsocial">cecilia.romeroldan@gmail.com</li>
+                    <li>
+                        <a href="https://mail.google.com/"  class="redsocial">
+                        <i class="fas fa-envelope icon"></i>
+                        <div class="red">cecilia.romeroldan@gmail.com</div>
+                    </a></li>
                 </ul>
             </div>
 
 
 
             <form action="" >
-                <h2 class="escribime">Escribime</h2>
-                <div class="formulario">
+                <h2 class="form-title">Escribime</h2>
+                <div class="container-form">
                 <div class="nameandlastname">
                     <div class="name">
                     <label for="name" >Nombre *</label>
@@ -159,13 +173,16 @@
                 <li><a href="#hola" class="footer-list">HOLA</a></li>
                 <li><a href="#conocimientos" class="footer-list">CONOCIMIENTOS</a></li>
                 <li><a href="#proyectos" class="footer-list">PROYECTOS</a></li>
-                <li><a href="#contacto" class="footer-list">CONTACTO</a></li>  
+                <li><a href="#container" class="footer-list">CONTACTO</a></li>  
             </ul>
             <ul class="footer-redes">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <a href="https://www.instagram.com/ceci_ror/?hl=es"><i class="fab fa-instagram-square icon-footer "></i>
+                
+                <li class="unico"><a href="https://github.com/ceciliarr"><i class="fab fa-github-alt icon-footer "></i></li>
+
+                <li><a href="https://www.linkedin.com/in/cecilia-romero-roldan-7057701bb/"><i class="fab fa-linkedin icon-footer "></i></li>
+
+                <li><a href="https://mail.google.com/"><i class="fas fa-envelope icon-footer"></i></li>
             </ul>
             <p class="footer-pie">Hecho con 💗 por Ceci</p>
         </div>
