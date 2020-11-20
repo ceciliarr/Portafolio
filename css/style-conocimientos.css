@@ -8,7 +8,7 @@
 }
 
 
- .container-conocimientos{
+ .container-skills{
      width: 100vw;
      height: auto;
      background-color:var(--colorFondoDos);
@@ -27,13 +27,13 @@
      font-family: 'Open Sans', sans-serif;
 }
 
- .conocimientos-p{
+ .skills-p{
      width: 100vw;
      text-align: center;
      margin: 5%;
  }
 
- .list-language{
+ .skills-languages{
      display: flex;
      flex-flow: row wrap;
      width: 60vw;
@@ -90,7 +90,7 @@
         width: 200px;
         height: 180px;
     }
-    .conocimientos-p{
+    .skills-p{
         width: 270px;
     }
 
@@ -101,7 +101,7 @@
 
 @media(max-width:370px){
   
-    .conocimientos-title{
+    .skills-title{
         font-size: 1.5em;
     }
 }
