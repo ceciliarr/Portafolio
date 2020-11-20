@@ -82,8 +82,9 @@ span{
     background-color: var(--colorGris);
 }
 
-.buttom-info:active{
+.buttom-info:focus{
     box-shadow: 0px 4px 18px 1px var(--colorNegro);
+    font-weight: 700;
 }
 
 /* RESPONSIVE */
